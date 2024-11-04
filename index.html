@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ankit Kumar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo-container">
+                    <img src="./Images/NavLogo.jpg" alt="logoimg" class="logo">
+                    <div class="logo-text">nkit Kumar</div>
+                </div>
+
+                <div class="nav-items">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                </div>
+
+            </div>
+
+            <div class="hero-section">
+
+                <div class="faded-text">Ankit Kumar</div>
+    
+                <div class="hero-section-left">
+                    <div class="hero-section-heading">Hi👋</div>
+                    
+                    <div class="hero-section-heading hero-section-sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
+    
+                    <div class="hero-section-description">
+                        I'm a software developer and here is my Portfolio website. Here you'll learn about my journey as a software developer.
+                    </div>
+    
+                    <div class="btn-pink" id="btn">Hire me</div>
+                </div>
+    
+                <div class="hero-section-right">
+    
+                    <div class="absolute icons icon-dots">
+                        <img src="./Images/dots.jpg" alt="">
+                    </div>
+    
+                    <div class="absolute icons icon-cube">
+                        <img src="./Images/cube.jpg" alt="">
+                    </div>
+    
+                    <div class="absolute icons icon-circle">
+                        <img src="./Images/circle.jpg" alt="">
+                    </div>
+    
+                    <div class="absolute icons icon-zigzag">
+                        <img src="./Images/zigzags.jpg" alt="">
+                    </div>
+    
+                    <div class="absolute icons icon-plus">
+                        <img src="./Images/plus.jpg" alt="">
+                    </div>
+    
+                    <div class="user-image">
+                        <img src="./Images/user.jpg" alt="">
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2 class="page-header">Projects</h2>
+
+            <div class="project-container">
+                <div class="project-card" id="project1">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <div class="project-skills-container">
+                            <img src="./Images/html.jpg" alt="" class="project-skill">
+                            <img src="./Images/css.jpg" alt="" class="project-skill">
+                            <img src="./Images/js.jpg" alt="" class="project-skill">
+                            <img src="./Images/react.jpg" alt="" class="project-skill">
+                            <img src="./Images/mongodb.jpg" alt="" class="project-skill">
+                            <img src="./Images/express.jpg" alt="" class="project-skill">
+                            <img src="./Images/node.jpg" alt="" class="project-skill">
+                        </div>
+                        <h2 class="project-heading">Tint & Orange</h2>
+                        <div class="project-subheading">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod qui odit hic. Aut dolore corrupti facere beatae consectetur saepe?
+                        </div>
+                        <div class="btn-grp">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="">
+                                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+        strings: [
+            "Full Stack Developer",
+            "Web Developer",
+            "UI-UX Designer",
+            "Backend Developer",
+            "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+        });
+    </script>
+
+</body>
+</html>

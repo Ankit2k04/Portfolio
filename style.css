@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+
+:root{
+    --bgOrange:#e84949;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#container{
+    width: 1200px;
+    margin: 0 2em;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logo{
+    width: 130px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.logo-text{
+    margin-left: -1.8rem;
+    font-size: 28px;
+}
+
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    padding: 0 4em;
+}
+
+.nav-items div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-items div a{
+    color: black;
+    /* transition: all 5s ease; */
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-items div:hover{
+    transition: 0.8s;
+    font-weight: bold;
+}
+
+.hero-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 1.5rem auto;
+    padding: 0 15rem;
+    padding-bottom: 8 rem;
+}
+
+.faded-text{
+    position: absolute;
+    user-select: none;
+    font-size: 4em;
+    color: rgb(231, 231, 231);
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+    padding-left: 18rem;
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-section-heading{
+    font-size: 35px;
+    font-weight: 500;
+    color: #343d68;
+}
+
+.role{
+    color: #4e45d5;
+    font-weight: 800;
+}
+
+.hero-section-sub-heading{
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.hero-section-description{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+.btn-pink{
+    background-color: var(--bgOrange);
+    color: white;
+    padding: 0.8rem 2.3rem;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #000;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+}
+
+.btn-pink::before{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    z-index: -1;
+}
+
+.btn-pink:hover::before{
+    transform: scaleX(1);
+}
+
+.btn-pink:hover {
+    border: solid 3px var(--bgOrange);
+    color: black;
+}
+
+.hero-section-right{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.absolute img{
+    width: 150px;
+}
+.user-image img{
+    height: 450px;
+    width: 360px;
+    z-index: -1;
+}
+
+.icon-dots{
+    mix-blend-mode: multiply;
+}
+.user-image{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: ScaleImage 5s linear infinite;
+}
+
+@keyframes ScaleImage {
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+    50%{
+        filter: grayscale(1);
+        transform: scale(1.1);
+    }
+    100%{
+        box-shadow: 3px 3px 10px black;
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+}
+
+.icon-dots{
+    z-index: 9;
+    bottom: -1rem;
+    right: 0;
+    animation: dotsAnimation 5s infinite;
+}
+
+@keyframes dotsAnimation {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.icon-cube img{
+    height: 50px;
+    width: 50px;
+}
+
+.icon-cube{
+    z-index: 9;
+    top: -1rem;
+    right: 0;
+    animation: cubeRotate 3s infinite;
+}
+
+@keyframes cubeRotate {
+    0%{
+        transform: rotateZ(0deg) translateY(0px);
+    }
+    50%{
+        transform: rotateZ(180deg) translateY(-12px);
+    }
+    100%{
+        transform: rotateZ(360deg) translateY(0px);
+    }
+}
+
+.icon-circle{
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    animation: shakeEffect 6s linear infinite;
+}
+
+.icon-circle{
+    mix-blend-mode: multiply;
+}
+
+@keyframes shakeEffect {
+    0%{
+        left: 0;
+        bottom: 0;
+    }
+    50%{
+        left: 5%;
+        bottom: 10%;
+    }
+    100%{
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.icon-zigzag{
+    z-index: 9;
+    top: 1.5em;
+    left: -1.2em;
+    animation: zigzagAnimation 5s ease-in infinite;
+}
+
+@keyframes zigzagAnimation {
+    50%{
+        left: 5%;
+        top: 2%;
+    }
+}
+
+.icon-plus{
+    z-index: 9;
+    top: -0.8em;
+    left: 50%;
+    animation: shakeEffectPlus 5s ease-in infinite;
+    mix-blend-mode: multiply;
+}
+
+.icon-plus img{
+    height: 40px;
+    width: 55px;
+}
+
+@keyframes shakeEffectPlus {
+    50%{
+        top: 3%;
+        left: 48%;
+    }
+}

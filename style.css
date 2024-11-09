@@ -881,6 +881,10 @@ footer{
         align-items: center;
     }
 
+    .title{
+        display: none;
+    }
+
     /* Nav items on the right */
     .nav-items {
         flex: 1;
@@ -1024,16 +1028,20 @@ footer{
         margin-bottom: 1rem; 
     }
 
+    .project-card:hover .project-content{
+        transform:scale(1);
+    }
+
     .project-number {
         font-size: 80px; 
         right: -10px;
         top: -20px;
-        opacity: 0;
-    }
-
-    .project-card:hover .project-number {
         opacity: 1;
     }
+
+    /* .project-card:hover .project-number {
+        opacity: 1;
+    } */
 
     .project-content {
         position: absolute;

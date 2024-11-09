@@ -806,7 +806,6 @@ footer{
     }
 }
 
-/* Small screens (landscape mobile, small tablets) */
 @media (max-width: 768px) {
     .logo {
         width: 80px;
@@ -827,7 +826,7 @@ footer{
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -861,12 +860,46 @@ footer{
     .nav-items .show {
         display: flex;
     }
+} */
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem 0rem;
+    }
+
+    /* Hide the hamburger menu */
+    .hamburger {
+        display: none;
+    }
+
+    /* Logo on the left */
+    .logo-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Nav items on the right */
+    .nav-items {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+    
+    /* Adjust font size if needed */
+    .nav-items div {
+        font-size: 16px;
+    }
 }
+
 
 /*hero section remainder*/
 @media (max-width: 768px) {
     .hero-section {
-        flex-direction: column;  /* Stack elements vertically on smaller screens */
+        flex-direction: column;  
         padding: 0 3rem;
         gap: 3rem;
     }
@@ -1091,7 +1124,6 @@ footer{
     }
 }
 
-/* Mobile Devices at 480px */
 @media (max-width: 480px) {
     .skills-container {
         padding: 1rem;
@@ -1164,7 +1196,6 @@ footer{
     }
 }
 
-/* For mobile devices (480px and below) */
 @media (max-width: 480px) {
     .contactus-form-container {
         padding: 1rem;
@@ -1212,7 +1243,6 @@ footer{
 
 @media (max-width: 768px) {
     .footer-wrapper {
-        /* flex-direction: column; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1239,7 +1269,6 @@ footer{
     }
 }
 
-/* Mobile screens (480px and below) */
 @media (max-width: 480px) {
     footer {
         padding: 1.5rem;
@@ -1272,45 +1301,4 @@ footer{
     .icon-wrapper .icon {
         font-size: 1.2rem;
     }
-
-    /* footer {
-        padding: 1.5rem;
-    }
-
-    .footer-faded-text {
-        font-size: 2.5rem;
-        opacity: 0.2;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-    .footer-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .link-wrapper {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    .link-wrapper div a {
-        font-size: 0.9rem;
-    }
-
-    .icon-wrapper {
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .icon-wrapper .icon {
-        font-size: 1.2rem;
-    }
-
-    .footer-faded-text {
-        font-size: 3rem;
-        font-weight: bold;
-        bottom: 2px;
-        left: -10px;
-    } */
 }

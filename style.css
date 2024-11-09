@@ -345,7 +345,7 @@ a{
 .project-card{
     width:90%;
     height:600px;
-    background-image: url(./Images/Project1.jpg);
+    /* background-image: url(./Images/Project1.jpg); */
     background-size: cover;
     /* background-repeat: no-repeat; */
     position:relative;
@@ -485,6 +485,7 @@ a .icon{
 
 #project1{
     background-image: url(./images/Project1.jpg);
+    background-position: center;
 }
 
 #project2{

@@ -489,12 +489,12 @@ a .icon{
 }
 
 #project2{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpwCnl3vyOC6u0eMdtqyciDJ1qT1xEIrnAWA&s");
+    background-image: url("./Images/vc.png");
     margin-left: 120px;
 }
 
 #project3{
-    background-image: url(./images/Project3.jpg);
+    background-image: url(./images/zerodha.png);
     background-position: center;
 }
 

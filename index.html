@@ -32,9 +32,9 @@
                         I am a <span class="role"></span>
                     </div>
                     <div class="hero-section-description">
-                        I'm a software developer and here is my Portfolio website. Here you'll learn about my journey as a software developer.
+                        Hi, I’m Ankit — a full-stack developer and problem solver passionate about building robust web applications. I love tackling challenging problems, learning new technologies, and delivering solutions that make a real impact.
                     </div>
-                    <div class="btn-pink" id="btn">Hire me</div>
+                    <div class="btn-pink" id="download-resume-btn">Download Resume</div>
                 </div>
                 <div class="hero-section-right">
                     <div class="absolute icons icon-dots">
@@ -113,7 +113,7 @@ It blends intuitive design with secure architecture to create a seamless and int
                         <h2 class="project-heading">Mehfil-Video Conferencing Application</h2>
             
                         <p class="project-sub-heading">
-                            Mehfil is a real-time video conferencing application built using React, Node.js, Express, MongoDB, Socket.io, Axios, bcrypt, and WebRTC. It enables fast peer-to-peer (P2P) video, audio, and data transfer for small team meetings, along with features like live chat, screen sharing, and secure password-protected access, deployed on Render for reliable performance
+                            Mehfil is a real-time video conferencing application. It enables fast peer-to-peer (P2P) video, audio, and data transfer for small team meetings.
                         </p>
                         <div class="btn-grp">
                             <button class="btn-pink btn-project">Read More</button>
@@ -311,5 +311,19 @@ It blends intuitive design with secure architecture to create a seamless and int
             event.target.submit();
         };
     </script>
+    <script>
+        const btn = document.getElementById('download-resume-btn');
+
+        btn.addEventListener('click', () => {
+            // Create invisible <a> tag
+            const link = document.createElement('a');
+            link.href = 'Ankit_Resume.pdf';
+            link.download = 'Ankit_Resume.pdf'; 
+            document.body.appendChild(link);
+            link.click(); 
+            document.body.removeChild(link);
+        });
+    </script>
+
 </body>
 </html>

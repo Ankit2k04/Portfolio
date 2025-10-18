@@ -443,7 +443,7 @@ a{
 }
 
 .project-heading{
-    font-size:50px;
+    font-size:40px;
     font-weight: bold;
     line-height:3rem;
 }
@@ -556,7 +556,7 @@ a .icon{
 
     .project-heading {
         font-size: 40px;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .project-sub-heading {
@@ -1088,7 +1088,7 @@ footer{
     }
 
     .project-heading {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .project-subHeading {
@@ -1172,7 +1172,7 @@ footer{
     }
 
     .project-heading {
-        font-size: 55px;
+        font-size: 40px;
     }
 
     .project-sub-heading {
@@ -1257,7 +1257,7 @@ footer{
     }
 
     .project-heading {
-        font-size: 90px;
+        font-size: 70px;
     }
 
     .project-sub-heading {
